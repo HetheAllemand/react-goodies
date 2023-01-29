@@ -1,0 +1,24 @@
+
+
+.product {
+    border: 2px solid black;
+    display: inline-block;
+    width: 242px;
+    height: 350px;
+    margin: 2px 2px;
+    background-color: rgba(122, 122, 177, 0.685);
+    border-radius: 9px;
+}
+
+.product:hover {
+    border-color: blue;
+    border: 5px solid blue;
+}
+
+.product .prices {
+    display: flex;
+}
+
+.product .prices label {
+    flex: 1;
+}
