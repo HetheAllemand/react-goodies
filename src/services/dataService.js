@@ -1,72 +1,88 @@
 var catalog = [
     {
-        "title": "Cake",
-        "category": "cake",
+        "title": "Brownie",
+        "category": "brownie",
         "price": 12.49,
-        "image": image.jpeg,
-        "_id": "any unique"
+        "image": "brownie.jpeg",
+        "_id": "1"
     },
     {
-        "title": "Cake",
-        "category": "cake",
+        "title": "Cholcolate Cupcake",
+        "category": "chocolate cupcake",
         "price": 12.49,
-        "image": image.jpeg,
-        "_id": "any unique"
+        "image": "chocolate_cupcake.jpeg",
+        "_id": "2"
     },
     {
-        "title": "Cake",
-        "category": "cake",
+        "title": "Cranberry Scone",
+        "category": "craberry scone",
         "price": 12.49,
-        "image": image.jpeg,
-        "_id": "any unique"
+        "image": "cranberry_scone.jpeg",
+        "_id": "3"
     },
     {
-        "title": "Cake",
-        "category": "cake",
+        "title": "Croissant",
+        "category": "croissant",
         "price": 12.49,
-        "image": image.jpeg,
-        "_id": "any unique"
+        "image": "croissant.jpeg",
+        "_id": "4"
     },
     {
-        "title": "Cake",
-        "category": "cake",
+        "title": "Lemon Cupcake",
+        "category": "lemon cupcake",
         "price": 12.49,
-        "image": image.jpeg,
-        "_id": "any unique"
+        "image": "lemon_cupcake.jpeg",
+        "_id": "5"
     },
     {
-        "title": "Cake",
-        "category": "cake",
+        "title": "Rose Cake",
+        "category": "rose cake",
         "price": 12.49,
-        "image": image.jpeg,
-        "_id": "any unique"
+        "image": "rose_cake.webp",
+        "_id": "6"
     },
     {
-        "title": "Cake",
-        "category": "cake",
+        "title": "Salt Cookie",
+        "category": "salt cookie",
         "price": 12.49,
-        "image": image.jpeg,
-        "_id": "any unique"
+        "image": "salt_cookie.jpeg",
+        "_id": "7"
     },
     {
-        "title": "Cake",
-        "category": "cake",
+        "title": "Tart",
+        "category": "tart",
         "price": 12.49,
-        "image": image.jpeg,
-        "_id": "any unique"
+        "image": "tart.jpeg",
+        "_id": "8"
     },
     {
-        "title": "Cake",
-        "category": "cake",
+        "title": "Tartine",
+        "category": "tartine",
         "price": 12.49,
-        "image": image.jpeg,
-        "_id": "any unique"
+        "image": "tartine.jpeg",
+        "_id": "9"
     },
     {
-        "title": "Cake",
-        "category": "cake",
+        "title": "Vanilla Bean Cupcake",
+        "category": "vanilla bean cupcake",
         "price": 12.49,
-        "image": image.jpeg,
-        "_id": "any unique"
+        "image": "vanilla_bean_cupcake.jpeg",
+        "_id": "10"
     },
 ];
+
+
+class DataService {
+
+
+    getProducts() {
+        // TODO: connect to server and retrieve products to display
+
+        return catalog;
+    }
+
+
+}
+
+
+export default DataService;
