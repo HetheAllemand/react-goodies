@@ -27,3 +27,16 @@
     width: 230px;
     height: 190px;
 }
+
+@media (max-width: 400px) {
+    .product {
+        width: 80%;
+        margin-left: 5%;
+    }
+
+    .product img {
+        width: 80%;
+        height: auto;
+        max-height: 175px;
+    }
+}
