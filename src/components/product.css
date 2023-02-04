@@ -12,7 +12,7 @@
 
 .product:hover {
     border-color: rgb(14, 13, 13);
-    border: 5px solid rgb(8, 8, 8);
+    border: 5px solid gold;
 }
 
 .product .prices {
