@@ -1,0 +1,14 @@
+.about {
+    background-color: white;
+    text-align: center;
+    min-height: 90vh;
+}
+
+.about button {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.about h4 {
+    color: orange;
+}
