@@ -1,0 +1,18 @@
+
+.ad-products {
+    display: block;
+    width: 400px;
+    border: 1px solid rgb(15, 1, 1);
+    border-radius: 4px;
+    padding: 25px
+}
+
+.ad-products h3 {
+    color: black;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.admin .parent {
+    display: flex;
+    justify-content: space-around;
+}
