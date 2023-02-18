@@ -1,3 +1,4 @@
+import AdminCouponCodes from '../components/adminCouponCode';
 import AdminProducts from '../components/adminProducts';
 import './admin.css';
 
@@ -9,6 +10,8 @@ function Admin() {
             <div className="parent">
             
             <AdminProducts></AdminProducts>
+
+            <AdminCouponCodes></AdminCouponCodes>
             
             </div>
         </div>
