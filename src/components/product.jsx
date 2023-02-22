@@ -34,7 +34,7 @@ function addProduct() {
 
 function handleAdd() {
     console.log("Button clicked", props.data);
-    addProductsToCart();
+    addProductsToCart(props.data);
 }
 
     return(
