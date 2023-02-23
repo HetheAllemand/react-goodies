@@ -1,20 +1,30 @@
 .cart img {
     width: 90px;
+    height: 120px;
 }
 
-.cart .prod-row {
+.prod-row {
     display: flex;
-    margin: 10px 30px;
+    margin: 10px 600px;
     padding: 10px;
-    border: 2px black;
     justify-content: center;
     align-items: center;
+    border: solid black;
 }
 
 .prod-row h6 {
-    flex: 4;
+    flex-basis: 150px;
 }
 
 .prod-row label {
-    flex: 2;
+    flex-basis: 150px;
+}
+
+.prod-row img {
+    flex-basis: 150px;
+    padding-right: 5px;
+}
+
+.prod-row button {
+    flex-basis: 150px;
 }
