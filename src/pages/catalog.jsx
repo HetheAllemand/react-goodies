@@ -19,10 +19,10 @@ function Catalog() {
         loadCatalog();
     }, []);
 
-    function loadCatalog() {
+    async function loadCatalog() {
         // get the products from the service
         let service = new DataService();
-        let prods = service.getProducts();
+        let prods = await service.getProducts();
         console.log(prods);
         setProducts(prods); //put the results into state var
         setProdsToDisplay(prods);

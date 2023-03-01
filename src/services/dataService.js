@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 var catalog = [
     {
         "title": "Brownie",
@@ -75,12 +77,19 @@ var catalog = [
 class DataService {
 
 
-    getProducts() {
-        // TODO: connect to server and retrieve products to display
+    async getProducts() {
+        let response = await axios.get("http://127.0.0.1:5000/api/catalog");
+        return response.data;
 
-        return catalog;
+        // use the line below to test w/othe server - just uncomment
+        // return catalog;
     }
 
+
+async saveProduct(product) {
+    let response = await axios.post("http://127.0.0.1:5000/api/catalog", product);
+    return response.data;
+}
 
 }
 

@@ -1,24 +1,39 @@
 import "./adminProducts.css";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import DataService from "../services/dataService";
 
 
 function AdminProducts() {
     const [product, setProduct] = useState({});
     const [allProducts, setAllProducts] = useState([]);
 
-    function textChanged(e) {
-        let text = e.target.value;
-        let attr = e.target.name;
+useEffect(function(){
+    loadProducts();
+}, []);
 
-        let copy = {...product};
-        copy[attr] = text;
-        setProduct(copy);
-    }
+async function loadProducts() {
+    let service = new DataService();
+    let prods = await service.getProducts();
+    setAllProducts(prods);
+}
+
+
+function textChanged(e) {
+    let text = e.target.value;
+    let attr = e.target.name;
+
+    let copy = {...product};
+    copy[attr] = text;
+    setProduct(copy);
+ }
 
     function saveProduct() {
         console.log(product);
-        //todo: fix price, string shold be a number
-
+        let savedProd = {...product};
+        savedProd.price = parseFloat(savedProd.price);
+        let service = new DataService();
+        service.saveProduct(savedProd);
+        
         let copy = [...allProducts];
         copy.push(product);
         setAllProducts(copy);
@@ -48,7 +63,7 @@ function AdminProducts() {
         </div>
 
         <ul>
-        {allProducts.map(prod => <li key={prod.title}>{prod.title}</li>)}
+        {allProducts.map(prod => <li key={prod.title}>{prod.title} -${prod.price}</li>)}
         </ul>
     </div>)
 }
