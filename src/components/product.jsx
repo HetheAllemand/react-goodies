@@ -34,7 +34,8 @@ function addProduct() {
 
 function handleAdd() {
     console.log("Button clicked", props.data);
-    addProductsToCart(props.data);
+    let copy = {...props.data, quantity: quantity};
+    addProductsToCart(copy);
 }
 
     return(

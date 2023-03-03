@@ -15,7 +15,8 @@ function Cart() {
                 <div className="prod-row">
                 <img src={'/images/' + prod.image} alt=""></img>
                 <h6>{prod.title}</h6>
-                <label>{prod.price}</label>
+                <label>{prod.quantity}</label>
+                <label>{prod.price * prod.quantity}</label>
                 <button className='btn btn-sm btn-danger'>Delete</button>
                 </div>
             ))}

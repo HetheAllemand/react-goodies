@@ -1,7 +1,8 @@
 
 
 .admin {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 10px;
 }
 
 .admin h1 {
